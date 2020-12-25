@@ -1,17 +1,21 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 
 public class Game : MonoBehaviour
 {
-    [SerializeField] private StoryData _data;
+    public static Action OnMessageFinished;
 
+    [SerializeField]
+    private StoryData _data;
+    [SerializeField]
     private TextDisplay _output;
+
     private BeatData _currentBeat;
     private WaitForSeconds _wait;
 
     private void Awake()
     {
-        _output = GetComponentInChildren<TextDisplay>();
         _currentBeat = null;
         _wait = new WaitForSeconds(0.5f);
     }
@@ -91,6 +95,11 @@ public class Game : MonoBehaviour
         while(_output.IsBusy)
         {
             yield return null;
+        }
+
+        if (data.Decision.Count == 0)
+        {
+            OnMessageFinished?.Invoke();
         }
         
         for (int count = 0; count < data.Decision.Count; ++count)

@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf5d5e33bab057c43929a11bc8f25f44, type: 3}
+  m_Name: IntroStory
+  m_EditorClassIdentifier: 
+  _beats:
+  - _choices:
+    - _text: Find Bravo-2, then complete the mission, over.
+      _beatId: 2
+    - _text: Complete the mission then find Bravo-2, over.
+      _beatId: 3
+    _text: 'Here speaks base, Bravo-2 got lost after the ambush, the choice of what
+      to do is yours, but remember your mission must go on! Many depend on your success!
+
+
+      What
+      do you want to do, over?'
+    _id: 1
+  - _choices: []
+    _text: 'An honorable choice, but the time lost in searching can cost the success
+      of the mission.
+
+
+
+      I''ll help you find him, but we have to be quick!
+      Get in the black hole, base out.'
+    _id: 2
+  - _choices: []
+    _text: 'The right choice for the good of all of us. However, it may cost Bravo-2
+      life, but he will surely understand it, he knows the importance of the mission.
+
+
+
+      Find
+      the black hole to proceed, base out.'
+    _id: 3

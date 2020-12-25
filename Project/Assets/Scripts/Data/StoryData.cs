@@ -9,7 +9,8 @@ using UnityEditor;
 [Serializable]
 public class StoryData : ScriptableObject
 {
-    [SerializeField] private List<BeatData> _beats;
+    [SerializeField]
+    private List<BeatData> _beats;
  
     public BeatData GetBeatById( int id )
     {
