@@ -9,7 +9,7 @@ public class BackgroundMusic : MonoBehaviour
     [SerializeField]
     private AudioClip[] clips;
     private int currentClip = 0;
-    [SerializeField]
+
     private bool stopPlaying = false;
     public bool StopPlaying { 
         get
