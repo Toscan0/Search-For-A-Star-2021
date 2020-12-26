@@ -130,13 +130,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   collisionDamage: 10
-  gold: 0
-  XP: 0
+  gold: 1
+  XP: 10
   boss: 0
   throwsHeart: 0
   heartPrefab: {fileID: 0}
-  goldPrefab: {fileID: 0}
-  deathEffectPrefab: {fileID: 0}
+  goldPrefab: {fileID: 9164040576496088280, guid: 59f062beec7d68d4db0167a983a1eb25, type: 3}
 --- !u!114 &5498060671363047054
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -55,6 +55,7 @@ public class SlimeManager : Enemy, IVictoryAnim
         }
 
         yield return new WaitForSeconds(2f);
+
         Destroy(gameObject);
     }
 

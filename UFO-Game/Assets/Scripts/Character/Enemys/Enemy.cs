@@ -21,8 +21,6 @@ public abstract class Enemy : Character
     protected GameObject heartPrefab;
     [SerializeField]
     protected GameObject goldPrefab;
-    [SerializeField]
-    protected GameObject deathEffectPrefab;
 
     public static Action OnEnemySpawn;
     public static Action OnEnemyDeath;
@@ -45,14 +43,12 @@ public abstract class Enemy : Character
         }
     }
 
-    protected void ThrowGold()
+    protected void ThrowGold(Vector3 pos)
     {
         // At the moment 1 gold = 1 obj
         for(int i = 0; i < gold; i++)
         {
-            Vector3 randomPos = new Vector3(UnityEngine.Random.Range(-1f, 1f), 0,
-                UnityEngine.Random.Range(-1f, 1f));
-            Instantiate(goldPrefab, transform.position + randomPos, Quaternion.identity);
+            Instantiate(goldPrefab, goldPrefab.transform.position + pos, Quaternion.identity);
         }
     }
 

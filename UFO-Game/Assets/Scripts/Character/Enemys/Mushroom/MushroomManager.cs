@@ -34,6 +34,7 @@ public class MushroomManager : Enemy
       
         yield return new WaitForSeconds(0.24f);
 
+        ThrowGold(transform.position);
         Destroy(gameObject);
     }
 }
