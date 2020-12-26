@@ -43,11 +43,7 @@ public abstract class Enemy : Character
 
     protected void ThrowGold(Vector3 pos)
     {
-        // At the moment 1 gold = 1 obj
-        for(int i = 0; i < gold; i++)
-        {
-            Instantiate(goldPrefab, goldPrefab.transform.position + pos, Quaternion.identity);
-        }
+        Instantiate(goldPrefab, goldPrefab.transform.position + pos, Quaternion.identity);
     }
 
     public void CollisionWithPlayer(GameObject go)

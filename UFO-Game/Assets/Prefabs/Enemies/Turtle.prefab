@@ -676,10 +676,10 @@ GameObject:
   - component: {fileID: 2426853074324188309}
   - component: {fileID: 7233706500493296490}
   - component: {fileID: 5896897149173292505}
+  - component: {fileID: 4573725720256613151}
   - component: {fileID: 4983275631884950859}
   - component: {fileID: 7233706500493296492}
   - component: {fileID: 1489203429}
-  - component: {fileID: 4573725720256613151}
   m_Layer: 9
   m_Name: Turtle
   m_TagString: Untagged
@@ -731,6 +731,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.3768442, y: 0.9906001, z: 1.1431186}
   m_Center: {x: 0, y: 0.5255735, z: 0.07155931}
+--- !u!95 &4573725720256613151
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2426853074324188311}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 0d3c605385d6d9547a1e3f24e8248962, type: 3}
+  m_Controller: {fileID: 9100000, guid: 17f4151a2686f374abe71037e338708d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &4983275631884950859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -745,8 +764,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 200
   collisionDamage: 50
-  gold: 1
-  XP: 10
+  gold: 10
   boss: 0
   throwsHeart: 0
   heartPrefab: {fileID: 2609110938715563814, guid: eab2cf33ed3b2c5488b6c30198aa8a69, type: 3}
@@ -775,25 +793,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88bb6fa8303c451409b4dd5349cdc2c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &4573725720256613151
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2426853074324188311}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 0d3c605385d6d9547a1e3f24e8248962, type: 3}
-  m_Controller: {fileID: 9100000, guid: 17f4151a2686f374abe71037e338708d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2426853074332705745
 GameObject:
   m_ObjectHideFlags: 0

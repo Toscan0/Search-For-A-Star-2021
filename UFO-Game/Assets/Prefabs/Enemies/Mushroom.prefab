@@ -69,10 +69,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5496407548517454440}
+  - component: {fileID: 5498060671363047052}
   - component: {fileID: 5498060671363047055}
   - component: {fileID: 5498060671363047053}
   - component: {fileID: 5498060671363047054}
-  - component: {fileID: 5498060671363047052}
   m_Layer: 9
   m_Name: Mushroom
   m_TagString: Untagged
@@ -97,6 +97,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180.00002, z: 0}
+--- !u!136 &5498060671363047052
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5498060671363047040}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.0039246
+  m_Height: 3.803025
+  m_Direction: 1
+  m_Center: {x: 0.00766923, y: 1.9085951, z: 9.3596664e-17}
 --- !u!95 &5498060671363047055
 Animator:
   serializedVersion: 3
@@ -130,8 +144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   collisionDamage: 10
-  gold: 1
-  XP: 10
+  gold: 10
   boss: 0
   throwsHeart: 0
   heartPrefab: {fileID: 2609110938715563814, guid: eab2cf33ed3b2c5488b6c30198aa8a69, type: 3}
@@ -154,20 +167,6 @@ MonoBehaviour:
   target: {fileID: 0}
   shootPoint: {fileID: 4207719014018974597}
   bulletPrefab: {fileID: 399859672214125178, guid: ee833eb5dd1528c449dd81d96fde9f0a, type: 3}
---- !u!136 &5498060671363047052
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5498060671363047040}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 1.0039246
-  m_Height: 3.803025
-  m_Direction: 1
-  m_Center: {x: 0.00766923, y: 1.9085951, z: 9.3596664e-17}
 --- !u!1 &5498630146201256022
 GameObject:
   m_ObjectHideFlags: 0

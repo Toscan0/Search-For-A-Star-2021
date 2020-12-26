@@ -1084,8 +1084,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   collisionDamage: 20
-  gold: 1
-  XP: 10
+  gold: 10
   boss: 0
   throwsHeart: 0
   heartPrefab: {fileID: 2609110938715563814, guid: eab2cf33ed3b2c5488b6c30198aa8a69, type: 3}

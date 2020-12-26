@@ -1440,10 +1440,10 @@ GameObject:
   - component: {fileID: 6101131348190491666}
   - component: {fileID: 7129421936038381066}
   - component: {fileID: 7129421936038381068}
+  - component: {fileID: 7129421936038381069}
   - component: {fileID: 7129421936038381071}
   - component: {fileID: 7129421936038381070}
   - component: {fileID: 7129421936038381067}
-  - component: {fileID: 7129421936038381069}
   m_Layer: 9
   m_Name: SlowZombie
   m_TagString: Untagged
@@ -1504,6 +1504,25 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!95 &7129421936038381069
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7129421936038381057}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 8f7380da49034cd488ddff94b1ac35d1, type: 3}
+  m_Controller: {fileID: 9100000, guid: 942b4263a6fa7c841b90d97d7c021a94, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &7129421936038381071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1518,8 +1537,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 500
   collisionDamage: 5
-  gold: 1
-  XP: 10
+  gold: 10
   boss: 0
   throwsHeart: 0
   heartPrefab: {fileID: 2609110938715563814, guid: eab2cf33ed3b2c5488b6c30198aa8a69, type: 3}
@@ -1550,25 +1568,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackRate: 0.6
---- !u!95 &7129421936038381069
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7129421936038381057}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 8f7380da49034cd488ddff94b1ac35d1, type: 3}
-  m_Controller: {fileID: 9100000, guid: 942b4263a6fa7c841b90d97d7c021a94, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7156762871147436548
 GameObject:
   m_ObjectHideFlags: 0
