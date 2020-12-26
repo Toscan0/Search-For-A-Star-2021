@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class Game : MonoBehaviour
+public class TextManager : MonoBehaviour
 {
     public static Action OnMessageFinished;
 

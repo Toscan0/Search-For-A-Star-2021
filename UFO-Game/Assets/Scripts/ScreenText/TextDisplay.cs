@@ -5,21 +5,28 @@ using TMPro;
 public class TextDisplay : MonoBehaviour
 {
     public enum State { Initialising, Idle, Busy }
+    public bool IsIdle { get { return _state == State.Idle; } }
+    public bool IsBusy { get { return _state != State.Idle; } }
+
+    [SerializeField]
+    private float chWaitingTime = 0.1f;
+    [SerializeField]
+    private float inputWaitingTime = 0.8f;
+
 
     private TMP_Text _displayText;
     private string _displayString;
+
     private WaitForSeconds _shortWait;
     private WaitForSeconds _longWait;
-    private State _state = State.Initialising;
 
-    public bool IsIdle { get { return _state == State.Idle; } }
-    public bool IsBusy { get { return _state != State.Idle; } }
+    private State _state = State.Initialising;
 
     private void Awake()
     {
         _displayText = GetComponent<TMP_Text>();
-        _shortWait = new WaitForSeconds(0.1f);
-        _longWait = new WaitForSeconds(0.8f);
+        _shortWait = new WaitForSeconds(chWaitingTime);
+        _longWait = new WaitForSeconds(inputWaitingTime);
 
         _displayText.text = string.Empty;
         _state = State.Idle;

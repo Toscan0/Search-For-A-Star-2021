@@ -1147,6 +1147,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4d339847e1180140ae140bb228ce65d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chWaitingTime: 0.05
+  inputWaitingTime: 0.8
 --- !u!1 &1193849013 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3721373129713824405, guid: bd75664d6f78e5f45b4600cf04b5f3df, type: 3}

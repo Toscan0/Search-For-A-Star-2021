@@ -14,7 +14,7 @@ public class SceneHolder : MonoBehaviour
     private void Awake()
     {
         DisableObj.OnFadeOutFinished += FadeOutFinished;
-        Game.OnMessageFinished += MessageFinished;
+        TextManager.OnMessageFinished += MessageFinished;
     }
 
     private void MessageFinished()
@@ -41,6 +41,6 @@ public class SceneHolder : MonoBehaviour
     private void OnDestroy()
     {
         DisableObj.OnFadeOutFinished -= FadeOutFinished;
-        Game.OnMessageFinished -= MessageFinished;
+        TextManager.OnMessageFinished -= MessageFinished;
     }
 }
