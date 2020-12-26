@@ -7,7 +7,7 @@ Project made for Search For a start of Grade in Games in 2021
 
 
 * TODO:
-* Gold: space ship
+* Gold: add to enemys
 * Hart
 * Musics
 * Intro anim
