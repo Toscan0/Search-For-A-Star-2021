@@ -15,21 +15,6 @@ public class SlimeCollisionManager : MonoBehaviour
         slimeMovement = GetComponent<SlimeMovement>();
     }
 
-
-    /*
-     * TODO: Change this to script
-     */
-    private void Update()
-    {
-        var target = GameObject.FindGameObjectWithTag("Player").transform.position;
-
-        // Rotate to target
-        Vector3 relativePos = target - transform.position;
-        transform.rotation = Quaternion.LookRotation(relativePos);
-    }
-
-
-
     private void OnCollisionEnter(Collision collision)
     {
         slimeManager.CollisionWithPlayer(collision.gameObject);

@@ -6,6 +6,9 @@ using UnityEngine;
 [RequireComponent(typeof(SlimeManager))]
 public class SlimeMovement : MonoBehaviour
 {
+    [SerializeField]
+    private Transform target;
+
     private float minVelocity = 4;
     private float maxVelocity = 6;
 
@@ -26,8 +29,6 @@ public class SlimeMovement : MonoBehaviour
 
         SetVelocity();
     }
-
-    
 
     public void SetVelocity()
     {
@@ -62,5 +63,16 @@ public class SlimeMovement : MonoBehaviour
         slimeManager.Velocity = velocity;
 
         SetVelocity();
+    }
+
+    private void Update()
+    {
+        RotateToTarget();
+    }
+
+    private void RotateToTarget()
+    {
+        Vector3 relativePos = target.position - transform.position;
+        transform.rotation = Quaternion.LookRotation(relativePos);
     }
 }
