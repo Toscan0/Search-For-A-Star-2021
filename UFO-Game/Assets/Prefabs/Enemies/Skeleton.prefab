@@ -723,9 +723,9 @@ MonoBehaviour:
   collisionDamage: 5
   gold: 1
   XP: 10
-  boss: 0
+  boss: 1
   throwsHeart: 0
-  heartPrefab: {fileID: 0}
+  heartPrefab: {fileID: 2609110938715563814, guid: eab2cf33ed3b2c5488b6c30198aa8a69, type: 3}
   goldPrefab: {fileID: 9164040576496088280, guid: 59f062beec7d68d4db0167a983a1eb25, type: 3}
   attackDamage: 15
   target: {fileID: 0}
