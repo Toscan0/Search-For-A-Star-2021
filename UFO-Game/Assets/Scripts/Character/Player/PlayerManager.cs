@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
 public class PlayerManager : Character
 {
@@ -12,8 +9,13 @@ public class PlayerManager : Character
     public static Action<int> OnMaxHealthUpdated;
     public static Action OnPlayerDeath;
 
+    private void Awake()
+    {
+        Gold.OnGoldPickedUp += GoldPickedUp;
+    }
+
     private new void Start()
-   {
+    {
         base.Start();
 
         // populate the UI
@@ -22,7 +24,7 @@ public class PlayerManager : Character
         OnHealthUpdated?.Invoke(currentHealth);
     }
 
-    public void GoldPickedUp()
+    private void GoldPickedUp()
     {
         gold++;
         OnGoldUpdated?.Invoke(gold);
@@ -44,5 +46,10 @@ public class PlayerManager : Character
     {
         //gameObject.SetActive(false);
         OnPlayerDeath?.Invoke();
+    }
+
+    private void OnDestroy()
+    {
+        Gold.OnGoldPickedUp -= GoldPickedUp;
     }
 }

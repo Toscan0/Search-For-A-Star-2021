@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class Enemy : Character
@@ -9,8 +7,8 @@ public abstract class Enemy : Character
     [SerializeField]
     protected int gold;
     // how much XP is deployed when killed
-    [SerializeField]
-    protected float XP;
+    //[SerializeField]
+    //protected float XP;
     // true if it is a boss
     [SerializeField]
     protected bool boss;
@@ -56,7 +54,6 @@ public abstract class Enemy : Character
     {
         if (go.CompareTag("Player"))
         {
-            Debug.Log("FFFFF");
             var damagable = go.GetComponent<IDamagable>();
             damagable.TakeDamage(collisionDamage);
         }
