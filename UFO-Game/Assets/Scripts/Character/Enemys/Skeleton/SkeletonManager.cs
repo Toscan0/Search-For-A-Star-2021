@@ -35,7 +35,7 @@ public class SkeletonManager : Enemy
         if (go.CompareTag("Player"))
         {
             var damagable = go.GetComponent<IDamagable>();
-            damagable.TakeDamage(collisionDamage);
+            damagable.TakeDamage(attackDamage);
         }
     }
 

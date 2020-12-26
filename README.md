@@ -7,8 +7,7 @@ Project made for Search For a start of Grade in Games in 2021
 
 
 * TODO:
-* Gold: add to enemys
-* Heart
+* Gold and Heart: TEST
 * Musics
 * Intro anim
 * laser

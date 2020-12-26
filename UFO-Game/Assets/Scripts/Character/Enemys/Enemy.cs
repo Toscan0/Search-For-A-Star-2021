@@ -56,6 +56,7 @@ public abstract class Enemy : Character
     {
         if (go.CompareTag("Player"))
         {
+            Debug.Log("FFFFF");
             var damagable = go.GetComponent<IDamagable>();
             damagable.TakeDamage(collisionDamage);
         }
