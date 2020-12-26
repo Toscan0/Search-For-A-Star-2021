@@ -7,6 +7,6 @@ public class Gold : PickUp
     public override void PickMe()
     {
         OnGoldPickedUp?.Invoke();
-        gameObject.SetActive(false);
+        Destroy(gameObject);
     }
 }

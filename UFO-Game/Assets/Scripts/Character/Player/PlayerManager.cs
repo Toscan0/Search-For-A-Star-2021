@@ -1,4 +1,5 @@
 ﻿using System;
+using UnityEngine;
 
 public class PlayerManager : Character
 {
@@ -12,6 +13,7 @@ public class PlayerManager : Character
     private void Awake()
     {
         Gold.OnGoldPickedUp += GoldPickedUp;
+        Heart.OnHeartPickedUp += HeartPickedUp;
     }
 
     private new void Start()
@@ -28,6 +30,17 @@ public class PlayerManager : Character
     {
         gold++;
         OnGoldUpdated?.Invoke(gold);
+    }
+
+    private void HeartPickedUp(int lifeValue)
+    {
+        currentHealth += lifeValue;
+        if(currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+
+        OnHealthUpdated?.Invoke(currentHealth);
     }
 
     public override void TakeDamage(int damage)
@@ -51,5 +64,6 @@ public class PlayerManager : Character
     private void OnDestroy()
     {
         Gold.OnGoldPickedUp -= GoldPickedUp;
+        Heart.OnHeartPickedUp -= HeartPickedUp;
     }
 }

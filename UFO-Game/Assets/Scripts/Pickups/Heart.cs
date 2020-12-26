@@ -1,12 +1,16 @@
 ﻿using System;
+using UnityEngine;
 
 public class Heart : PickUp
 {
-    public static Action OnHeartPickedUp;
+    public static Action<int> OnHeartPickedUp;
+
+    [SerializeField]
+    private int value = 5;
 
     public override void PickMe()
     {
-        OnHeartPickedUp?.Invoke();
-        gameObject.SetActive(false);
+        OnHeartPickedUp?.Invoke(value);
+        Destroy(gameObject);
     }
 }
