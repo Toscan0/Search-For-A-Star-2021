@@ -34,6 +34,17 @@ public class BackgroundMusic : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        PlayClip();
+    }
+
+    
+
+    void Update()
+    {
+        if (!audioSource.isPlaying && clips.Length > 0 && StopPlaying == false)
+        {
+            PlayClip();
+        }
     }
 
     private AudioClip GetRandomClip()
@@ -50,22 +61,21 @@ public class BackgroundMusic : MonoBehaviour
 
     private AudioClip GetNextClip()
     {
+        AudioClip clip = clips[currentClip];
+
         currentClip++;
 
-        if(currentClip >= clips.Length)
+        if (currentClip >= clips.Length)
         {
             currentClip = 0;
         }
 
-        return clips[currentClip];
+        return clip;
     }
 
-    void Update()
+    private void PlayClip()
     {
-        if (!audioSource.isPlaying && clips.Length > 0 && StopPlaying == false)
-        {
-            audioSource.clip = GetNextClip();
-            audioSource.Play();
-        }
+        audioSource.clip = GetNextClip();
+        audioSource.Play();
     }
 }
