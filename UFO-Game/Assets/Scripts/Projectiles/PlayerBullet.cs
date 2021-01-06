@@ -26,7 +26,12 @@ public class PlayerBullet : Projectile
     {
         base.OnCollisionEnter(collision);
 
-        var impactEffect = Instantiate(impactEffectPrefab, transform.position, transform.rotation);
+        Quaternion impactEffectRotation = transform.rotation * Quaternion.Euler(90, 90, 0);
+
+        var impactEffect = Instantiate(impactEffectPrefab, 
+            transform.position,
+            impactEffectRotation);
+
         Destroy(impactEffect, 0.4f);
     }
 }
