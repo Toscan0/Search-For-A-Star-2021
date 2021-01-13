@@ -29,8 +29,15 @@ public class LevelManager : MonoBehaviour
 
     private void PlayerWin()
     {
-        blackHole.SetActive(true);
-        victoryText.SetActive(true);
+        if(blackHole != null)
+        {
+            blackHole.SetActive(true);
+        }
+
+        if (victoryText != null)
+        {
+            victoryText.SetActive(true);
+        }
     }
 
     void OnDestroy()

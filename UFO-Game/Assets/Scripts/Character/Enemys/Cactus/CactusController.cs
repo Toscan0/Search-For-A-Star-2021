@@ -51,7 +51,6 @@ public class CactusController : MonoBehaviour
                 attackTimer = 0;
 
                 cactusAttack.StartAttack();
-                Debug.Log("Attack");
             }
         }
 
@@ -60,7 +59,7 @@ public class CactusController : MonoBehaviour
             //Hide
             show = false;
             ShowOrHide(show);
-            Debug.Log("Hide");
+
             //Move too a new pos
             cactusMovement.Move();
 
@@ -72,7 +71,6 @@ public class CactusController : MonoBehaviour
                 hideTimer = 0;
 
                 ShowOrHide(show);
-                Debug.Log("Show");
             }
         }
     }

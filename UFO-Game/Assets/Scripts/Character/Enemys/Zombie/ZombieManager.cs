@@ -32,7 +32,7 @@ public class ZombieManager : Enemy
 
         ThrowHeart();
       
-        yield return new WaitForSeconds(1.10f);
+        yield return new WaitForSeconds(10f);
 
         Destroy(gameObject);
     }
