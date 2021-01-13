@@ -33,11 +33,11 @@ public abstract class Enemy : Character
         PlayerManager.OnPlayerDeath += EnemysWin;
     }
 
-    protected void ThrowHeart()
+    protected void ThrowHeart(Vector3 pos)
     {
         if (throwsHeart)
         {
-            Instantiate(heartPrefab, transform.position, Quaternion.identity);
+            Instantiate(heartPrefab, heartPrefab.transform.position + pos, Quaternion.Euler(-90, 0, 0));
         }
     }
 

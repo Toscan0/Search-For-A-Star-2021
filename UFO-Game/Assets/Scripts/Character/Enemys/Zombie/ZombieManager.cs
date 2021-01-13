@@ -30,10 +30,11 @@ public class ZombieManager : Enemy
 
         animator.SetTrigger("Die");
 
-        ThrowHeart();
+        ThrowHeart(transform.position);
       
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(1.10f);
 
+        ThrowGold(transform.position);
         Destroy(gameObject);
     }
 }

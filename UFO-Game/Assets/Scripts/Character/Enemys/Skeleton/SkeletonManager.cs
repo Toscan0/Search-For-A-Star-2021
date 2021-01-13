@@ -45,10 +45,11 @@ public class SkeletonManager : Enemy
 
         animator.SetTrigger("Die");
 
-        ThrowHeart();
+        ThrowHeart(transform.position);
       
         yield return new WaitForSeconds(2.05f);
 
+        ThrowGold(transform.position);
         Destroy(gameObject);
     }
 }

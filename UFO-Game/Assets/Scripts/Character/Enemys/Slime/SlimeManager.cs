@@ -51,7 +51,7 @@ public class SlimeManager : Enemy, IVictoryAnim
         }
         else
         {
-            ThrowHeart();
+            ThrowHeart(transform.position);
         }
 
         yield return new WaitForSeconds(2f);

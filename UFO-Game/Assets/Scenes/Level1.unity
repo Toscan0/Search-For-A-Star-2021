@@ -2075,6 +2075,10 @@ PrefabInstance:
       propertyPath: loadSceneManager
       value: 
       objectReference: {fileID: 2297275835345123160}
+    - target: {fileID: 8478790214527613817, guid: 957f2ae46f9912b4795dffbf79821ca7, type: 3}
+      propertyPath: loadSceneManager
+      value: 
+      objectReference: {fileID: 2297275835345123160}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 957f2ae46f9912b4795dffbf79821ca7, type: 3}
 --- !u!1 &1897779361 stripped
@@ -2090,6 +2094,11 @@ GameObject:
 --- !u!1 &1897779363 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3299260256415799503, guid: 957f2ae46f9912b4795dffbf79821ca7, type: 3}
+  m_PrefabInstance: {fileID: 1897779360}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1897779364 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2314499649370523348, guid: 957f2ae46f9912b4795dffbf79821ca7, type: 3}
   m_PrefabInstance: {fileID: 1897779360}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1914009462
@@ -2133,6 +2142,10 @@ PrefabInstance:
       objectReference: {fileID: 2010367515}
     - target: {fileID: 1471703012947455347, guid: 96ea89158a4165a4e8d21644b0578698, type: 3}
       propertyPath: gold
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471703012947455347, guid: 96ea89158a4165a4e8d21644b0578698, type: 3}
+      propertyPath: throwsHeart
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1471703012947455357, guid: 96ea89158a4165a4e8d21644b0578698, type: 3}
@@ -2499,6 +2512,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1897779363}
     - target: {fileID: 2771641393804432967, guid: 0dd9970994d3edc4ba05e34ea3735c88, type: 3}
+      propertyPath: fadeInOnLost
+      value: 
+      objectReference: {fileID: 1897779364}
+    - target: {fileID: 2771641393804432967, guid: 0dd9970994d3edc4ba05e34ea3735c88, type: 3}
       propertyPath: LoadSceneManager
       value: 
       objectReference: {fileID: 0}
@@ -2565,7 +2582,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2704911745152378563, guid: 95bacd5d118ae5f40af38734cee128ae, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2704911745152378588, guid: 95bacd5d118ae5f40af38734cee128ae, type: 3}
       propertyPath: gold
@@ -2634,7 +2651,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1471703012947455357, guid: 96ea89158a4165a4e8d21644b0578698, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2465672207725764462, guid: 96ea89158a4165a4e8d21644b0578698, type: 3}
       propertyPath: m_RootOrder

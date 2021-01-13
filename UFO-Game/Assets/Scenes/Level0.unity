@@ -4237,7 +4237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1817469447661466015, guid: 50a734cd068091d41ae93f7c9efdd3a3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1818069102438960790, guid: 50a734cd068091d41ae93f7c9efdd3a3, type: 3}
       propertyPath: m_Layer
@@ -4564,7 +4564,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1817469447661466015, guid: 50a734cd068091d41ae93f7c9efdd3a3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1818069102438960790, guid: 50a734cd068091d41ae93f7c9efdd3a3, type: 3}
       propertyPath: m_Layer
@@ -4753,6 +4753,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 420435008}
     - target: {fileID: 2771641393804432967, guid: 0dd9970994d3edc4ba05e34ea3735c88, type: 3}
+      propertyPath: fadeInOnLost
+      value: 
+      objectReference: {fileID: 3299260256264457360}
+    - target: {fileID: 2771641393804432967, guid: 0dd9970994d3edc4ba05e34ea3735c88, type: 3}
       propertyPath: LoadSceneManager
       value: 
       objectReference: {fileID: 185044298}
@@ -4857,8 +4861,17 @@ PrefabInstance:
       propertyPath: loadSceneManager
       value: 
       objectReference: {fileID: 185044298}
+    - target: {fileID: 8478790214527613817, guid: 957f2ae46f9912b4795dffbf79821ca7, type: 3}
+      propertyPath: loadSceneManager
+      value: 
+      objectReference: {fileID: 185044298}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 957f2ae46f9912b4795dffbf79821ca7, type: 3}
+--- !u!1 &3299260256264457360 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2314499649370523348, guid: 957f2ae46f9912b4795dffbf79821ca7, type: 3}
+  m_PrefabInstance: {fileID: 3299260256264457359}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6896757955589997068
 Transform:
   m_ObjectHideFlags: 0
@@ -5077,7 +5090,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2426853074324188311, guid: f2689ca713843ab4799de0377caaac58, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2426853074332705745, guid: f2689ca713843ab4799de0377caaac58, type: 3}
       propertyPath: m_Layer
@@ -5130,6 +5143,10 @@ PrefabInstance:
     - target: {fileID: 4983275631884950859, guid: f2689ca713843ab4799de0377caaac58, type: 3}
       propertyPath: gold
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4983275631884950859, guid: f2689ca713843ab4799de0377caaac58, type: 3}
+      propertyPath: throwsHeart
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7093553591614233539, guid: f2689ca713843ab4799de0377caaac58, type: 3}
       propertyPath: m_Layer

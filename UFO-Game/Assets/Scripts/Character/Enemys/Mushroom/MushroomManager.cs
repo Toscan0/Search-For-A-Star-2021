@@ -30,7 +30,7 @@ public class MushroomManager : Enemy
 
         animator.SetTrigger("Die");
 
-        ThrowHeart();
+        ThrowHeart(transform.position);
       
         yield return new WaitForSeconds(0.24f);
 

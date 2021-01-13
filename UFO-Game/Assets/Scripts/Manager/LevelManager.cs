@@ -14,6 +14,9 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     private GameObject fadeIn;
 
+    [SerializeField]
+    private GameObject fadeInOnLost;
+
     void Awake()
     {
         PlayerManager.OnPlayerDeath += PlayerLost;
@@ -24,7 +27,7 @@ public class LevelManager : MonoBehaviour
     {
         defeatText.SetActive(true);
 
-        fadeIn.SetActive(true);
+        fadeInOnLost.SetActive(true);
     }
 
     private void PlayerWin()

@@ -1798,6 +1798,10 @@ PrefabInstance:
       propertyPath: loadSceneManager
       value: 
       objectReference: {fileID: 1085436832}
+    - target: {fileID: 8478790214527613817, guid: 957f2ae46f9912b4795dffbf79821ca7, type: 3}
+      propertyPath: loadSceneManager
+      value: 
+      objectReference: {fileID: 1085436832}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 957f2ae46f9912b4795dffbf79821ca7, type: 3}
 --- !u!1001 &1997573218
@@ -2201,8 +2205,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 846914803}
     - target: {fileID: 2771641393804432967, guid: 0dd9970994d3edc4ba05e34ea3735c88, type: 3}
+      propertyPath: fadeInOnLost
+      value: 
+      objectReference: {fileID: 5870966337792707146}
+    - target: {fileID: 2771641393804432967, guid: 0dd9970994d3edc4ba05e34ea3735c88, type: 3}
       propertyPath: LoadSceneManager
       value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0dd9970994d3edc4ba05e34ea3735c88, type: 3}
+--- !u!1 &5870966337792707146 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2314499649370523348, guid: 957f2ae46f9912b4795dffbf79821ca7, type: 3}
+  m_PrefabInstance: {fileID: 1906878521}
+  m_PrefabAsset: {fileID: 0}

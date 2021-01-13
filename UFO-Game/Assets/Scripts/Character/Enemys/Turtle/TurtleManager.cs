@@ -33,10 +33,12 @@ public class TurtleManager : Enemy, IVictoryAnim
 
         animator.SetTrigger("Die");
 
+        ThrowGold(transform.position);
+
         yield return new WaitForSeconds(2f);
 
         Destroy(gameObject);
-        ThrowHeart();
+        ThrowHeart(transform.position);
     }
 
     public void PlayVictoryAnim()
