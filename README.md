@@ -4,6 +4,7 @@ Project made for Search For a start of Grade in Games in 2021
 # Useful Links:
 
 * [Game](https://toscan0.itch.io/ufo-game)
+* [Gameplay](https://www.youtube.com/watch?v=cRlUYpBwexs&feature=emb_title&ab_channel=TiagoHenriques)
 
 # Acknowledgments
 * Assets Used:
